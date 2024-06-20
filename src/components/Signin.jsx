@@ -1,11 +1,17 @@
 import React from 'react'
+import './signin.css'
+import { Link } from 'react-router-dom'
 
 function Signin() {
   return (
     <>
-      <div className='sign-in-container'>
-        <button className="buttonGoogle" >Sign in with Google</button>
-        <button className='buttonSignin'>Signin with e-mail</button>
+      <div className='signin-container'>
+        <img src="src/assets/images/commonspace-03 1.png" alt="Logo" />
+        <p>Sign in to Commonspace</p>
+        <button className="button-google" >Sign in with Google</button>
+        <Link to="/signup">
+          <button className='button-signin'>Sign in with e-mail</button>
+        </Link>
       </div>
     </>
   )
