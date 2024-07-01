@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SigninPage from "./pages/SigninPage";
 import SignupForm from "./pages/SignupForm";
 import Layout from "./Layout";
+import Spaces from "./pages/Spaces";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SigninPage />} />
           <Route path="/signup" element={<SignupForm />} />
+          <Route path="/spaces" element={<Spaces />} />
         </Route>
       </Routes>
     </Router>

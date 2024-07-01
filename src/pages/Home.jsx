@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import '../assets/stylesheets/home.css'
 
 function Home() {
   const [inputValue, setInputValue] = React.useState('')
