@@ -1,0 +1,157 @@
+.search-results {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap:nowrap;
+  text-align: justify;
+  gap: 10px;
+
+  i {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 900;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+
+}
+
+.grid-container {
+  padding-top: 15px;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 15px;
+
+  .fa-sliders {
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+  }
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+
+
+  input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  word-wrap: break-word;
+  gap: 1.5rem;
+  padding: 0px;
+  padding-top: 10px;
+
+}
+.card {
+  width: 350px;
+  margin-bottom: 1px;
+  border: 1px solid #ccc;
+  padding-bottom: 1px;
+  text-align: center;
+
+  .card-action {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .avatar-small {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      justify-self: right;
+      margin-right: 0px;
+      padding-right: 0px;
+      margin-left:50px
+    }
+
+    button {
+      background-color: rgb(20,20,20);
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+  }
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 2px;
+
+  i {
+    font-size: 2rem;
+    color: grey;
+    font-weight: 900;
+    padding-left: 10px;
+  }
+
+
+  button {
+    background-color: rgb(20,20,20);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-wrap: break-word;
+    gap: 1.5rem;
+    padding: 0px;
+  }
+  .card {
+    width: 80%;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+  }
+
+}
